@@ -113,10 +113,10 @@
 }
 
 /* Slide-specific background images */
-.carousel-item.slide-1 { background-image: url('assets/images/hero-1.jpg'); }
-.carousel-item.slide-2 { background-image: url('assets/images/hero-2.jpg'); }
-.carousel-item.slide-3 { background-image: url('assets/images/hero-3.jpg'); }
-.carousel-item.slide-4 { background-image: url('assets/images/hero-4.jpg'); }
+.carousel-item.slide-1 { background-image: url('/images/hero-1.jpg'); }
+.carousel-item.slide-2 { background-image: url('/images/hero-2.jpg'); }
+.carousel-item.slide-3 { background-image: url('/images/hero-3.jpg'); }
+.carousel-item.slide-4 { background-image: url('/images/hero-4.jpg'); }
 
 /* Optional dark mask overlay */
 .mask {
@@ -907,10 +907,10 @@ blockquote.review {
 }
 
 /* Slide-specific background images */
-.carousel-item.slide-1 { background-image: url('assets/images/hero-1.jpg'); }
-.carousel-item.slide-2 { background-image: url('assets/images/hero-2.jpg'); }
-.carousel-item.slide-3 { background-image: url('assets/images/hero-3.jpg'); }
-.carousel-item.slide-4 { background-image: url('assets/images/hero-4.jpg'); }
+.carousel-item.slide-1 { background-image: url('/images/hero-1.jpg'); }
+.carousel-item.slide-2 { background-image: url('/images/hero-2.jpg'); }
+.carousel-item.slide-3 { background-image: url('/images/hero-3.jpg'); }
+.carousel-item.slide-4 { background-image: url('/images/hero-4.jpg'); }
 
 /* Optional dark mask overlay */
 .mask {
@@ -1949,7 +1949,7 @@ html {
     padding-bottom: 2rem;
 }
     .theme-section .section-title .title-border {
-    background: url(assets/images/bg/title-border-grey.svg) no-repeat center top;
+    background: url(/images/bg/title-border-grey.svg) no-repeat center top;
     height: 20px;
     width:516px;
     display: block;
@@ -2137,3 +2137,4 @@ html {
 
     
 }
+
