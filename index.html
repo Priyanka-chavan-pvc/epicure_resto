@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epicure - Bootstrap 5 Restaurant Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.css" rel="stylesheet" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Google Font for script -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.css">
+
+<!-- Font Awesome (for dots/icons) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.css">
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Google Font for script -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS (Optional) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Theme CSS -->
+  <link href="style.css" rel="stylesheet">
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<!-- Google Font for 'Welcome to' -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<head>
+  <!-- ... other head elements ... -->
+<head>
+  <!-- ... other head elements ... -->
+  <link id="theme-style" rel="stylesheet" href="style.css">
+<!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<!-- SimpleLightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+ <header id="header" class="header fixed-top">  
+        <div class="container ">       
+            <nav class="main-nav navbar navbar-expand-md" role="navigation">
+                <button class="navbar-toggler navbar-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggle-title">Menu</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
+                <div id="navbar-collapse" class="navbar-collapse collapse  text-center justify-content-center">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link scrollto" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#menus">Menus</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#news">News &amp; Events</a></li>                                              
+                        <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#reserve-modal">Reservations</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//container-->
+    </header><!--//header-->
+    <script>
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    window.scrollY > 80
+      ? header.classList.add('scrolled')
+      : header.classList.remove('scrolled');
+  });
+</script>
+
+
+<section id="hero" class="hero-section position-relative text-white">
+  
+
+  <!-- ✅ Background Carousel Wrapper -->
+  <div class="bg-slider-wrapper">
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item slide-1 active">
+          <div class="mask d-none d-lg-block"></div>
+        </div>
+        <div class="carousel-item slide-2">
+          <div class="mask d-none d-lg-block"></div>
+        </div>
+        <div class="carousel-item slide-3">
+          <div class="mask d-none d-lg-block"></div>
+        </div>
+        <div class="carousel-item slide-4">
+          <div class="mask d-none d-lg-block"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ✅ Foreground Content -->
+  <div class="content-wrapper position-absolute top-50 start-50 translate-middle text-center w-100">
+    <div class="container">
+      <div class="branding">
+        <div class="script">Welcome to</div>
+        <h1 class="logo">
+          <img class="img-fluid hero-logo" src="assets/images/svg/epicure-logo-svg.svg" alt="Epicure Logo"  />
+          <style>.hero section.logo {font-;size:68px;}</style>
+        </h1>
+        <div class="tagline">
+          <ul class="list-inline">
+            <li class="list-inline-item type">Cafe</li>
+            <li class="list-inline-item dot"><i class="fas fa-circle"></i></li>
+            <li class="list-inline-item type">Restaurant</li>
+            <li class="list-inline-item dot"><i class="fas fa-circle"></i></li>
+            <li class="list-inline-item type">Wine Bar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta-container mt-4">
+        <button type="button" class="btn btn-theme btn-lg" data-bs-toggle="modal" data-bs-target="#reserve-modal">
+          Book a Table
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Scroll Arrow -->
+  <a class="arrow-holder animate scrollto" href="#menus"View our menus>
+    <img src="assets/images/9451322.png" alt="Scroll Down">
+  </a>
+</section>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optional Custom JS (Auto start, interval, pause, etc.) -->
+<!-- Bootstrap JS Bundle (Already Included, OK) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Auto-play Carousel Script -->
+<script>
+  var myCarousel = document.querySelector('#hero-carousel');
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 4000,   // 4 seconds
+    ride: 'carousel',
+    pause: false
+  });
+</script>
+
+
+</div>
+</body>
+</html>
+
+
+			</div><!--//bg-carousel-->
+        </div><!--//bg-slider-wrapper-->
+<!-- ******Reviews Section****** -->
+<section id="reviews" class="reviews-section section">
+  <div class="container text-center">
+    <div id="reviews-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- First -->
+        <div class="carousel-item active">
+          <h3 class="review-title"><i class="fas fa-quote-left"></i>This is the best restaurant in London</h3>
+          <blockquote class="review mx-auto">
+            <p>The food there is exquisite.
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                genuinely good food good life must visit</p>
+          </blockquote>
+          <div class="source">
+            <img class="profile" src="assets/images/rev1.png" alt="profile-1"/>
+            <div class="name">Dylan Davis</div>
+            <div class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second -->
+        <div class="carousel-item">
+          <h3 class="review-title"><i class="fas fa-quote-left"></i>Amazing service and food</h3>
+          <blockquote class="review mx-auto">
+            <p>Excellent steak consectetur adipiscing elit. Duis rhoncus porta libero.wow a delite ful replica food europe</p>
+          </blockquote>
+          <div class="source">
+            <img class="profile" src="assets/images/rev2.png" alt="profile-2" />
+            <div class="name">Annie Wang</div>
+            <div class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third -->
+        <div class="carousel-item">
+          <h3 class="review-title"><i class="fas fa-quote-left"></i>Exceeds expectations</h3>
+          <blockquote class="review mx-auto">
+            <p>Our expectations were met! Lorem ipsum dolor sit amet, consectetur adipiscing elit.the food is wow delicious most visit once</p>
+          </blockquote>
+          <div class="source">
+            <img class="profile" src="assets/images/rev3.jpg" alt="profile-3"/>
+            <div class="name">James Cooper</div>
+            <div class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+         <!-- //Indicators -->
+<div class="carousel-indicators press-logos">
+    <button type="button" class="active" data-bs-target="#reviews-carousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+        <img class="press-logo" src="assets/images/svg/press-ta.svg" alt="Tripadvisor" />
+    </button>
+    <button type="button" data-bs-target="#reviews-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+        <img class="press-logo" src="assets/images/svg/press-tp.svg" alt="Trustpilot" />
+    </button>
+    <button type="button" data-bs-target="#reviews-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+        <img class="press-logo" src="assets/images/svg/press-yelp.svg" alt="Yelp" />
+    </button>
+</div>
+<!--//carousel-indicators-->
+                <style>
+                /* Make the entire indicators row centered */
+/* Center the entire indicators row */
+.carousel-indicators.press-logos {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* allows logos to wrap on small screens */
+}
+
+/* Responsive logo sizing */
+.carousel-indicators.press-logos .press-logo {
+    max-width: 787px; /* Limit maximum size */
+    width: 100%;      /* Shrinks to fit screen */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.carousel-indicators.press-logos .press-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Hide Bootstrap's default dots */
+.carousel-indicators [data-bs-target] {
+    background-color: transparent !important;
+    border: none;
+    padding: 0;
+}
+
+</style>
+            </div><!--//reviews-carousel-->
+        </div><!--//container-->
+    </section><!--//reviews-->
+    </div>
+  </div>
+</section>
+
+  <style>
+  
+</style>
+</section>
+</section>
+</section>
+ <!-- ******Menus section****** -->
+    <div id="menus" class="menus-section theme-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <span class="script">Discover</span>
+                <span class="title-text">Our Menus</span>
+
+                <span class="title-border"></span>
+            </h2>
+            <div class="intro ms-auto me-auto">
+                <p class="mb-5">A menu description provides details about a dish or beverage on a restaurant or eatery's menu. Well-written menu descriptions are more than just a list of ingredients and can significantly impact customer choices and satisfaction..</p>
+            </div>
+            <div class="menu-links">
+                <ul class="list-inline me-auto ms-auto">
+                    <li class="list-inline-item"><a class="btn btn-theme-primary" href="assets/images/pdf-file.pdf" target="_blank">Lunch Menu</a></li>
+                    <li class="list-inline-item"><a class="btn btn-theme-primary" href="assets/images/pdf-file.pdf" target="_blank">Dinner Menu</a></li>
+                    <li class="list-inline-item"><a class="btn btn-theme-primary" href="assets/images/pdf-file.pdf" target="_blank">Wine List</a></li>
+                </ul>
+            </div><!--//menu-links-->
+            <div class="featured">
+                <h3 class="title script">Signature Dishes</h3>
+ 
+                <div class="media-wrapper row">
+                    <div class="col-left col-6 col-md-8">
+                        <div class="row">
+                            <div class="col-12"> 
+                                <div class="media-item">
+                                    <div class="media-item-inner">
+                                        <img class="img-fluid" src="assets/images/media-1.jpg" alt="">
+                                        <a class="mask d-none d-lg-block" href="assets/images/media-1-lg.jpg" >
+                                            <span class="mask-inner">
+                                                <span class="item-title script">Charbroiled Sterling Silver Pork Chop</span>
+                                                <span class="desc d-none d-xl-block">Description about the dish goes here luctus leo, vitae tempor nulla. Nam iaculis turpis ac cursus interdum.</span>
+                                                <span class="price d-none d-xl-block">Rs 100</span>
+                                            </span><!--//mask-inner-->
+                                        </a><!--//mask-->
+                                    </div><!--//media-item-inner-->
+                                </div><!--//media-item-->
+                            </div>
+                            
+                            <div class="col-12 col-md-6">    
+                                <div class="media-item">
+                                    <div class="media-item-inner">
+                                        <img class="img-fluid" src="assets/images/media-2.jpg" alt="">
+                                        <a class="mask d-none d-lg-block" href="assets/images/media-2-lg.jpg">
+                                            <span class="mask-inner">
+                                                <span class="item-title script">Wild Salmon</span>
+                                                <span class="desc d-none d-xl-block">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                                <span class="price d-none d-xl-block">Rs 100</span>
+                                            </span><!--//mask-inner-->
+                                        </a><!--//mask-->
+                                    </div><!--//media-item-inner-->
+                                </div><!--//media-item-->
+                            </div>
+                            <div class="col-12 col-md-6"> 
+                                <div class="media-item">
+                                    <div class="media-item-inner">
+                                        <img class="img-fluid" src="assets/images/media-3.jpg" alt="">
+                                        <a class="mask d-none d-lg-block" href="assets/images/media-3-lg.jpg">
+                                            <span class="mask-inner">
+                                                <span class="item-title script">Crab and Avacado Salad</span>
+                                                <span class="desc d-none d-xl-block">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                                <span class="price d-none d-xl-block">Rs 100</span>
+                                            </span><!--//mask-inner-->
+                                        </a><!--//mask-->
+                                    </div><!--//media-item-inner-->
+                                </div><!--//media-item-->
+                            </div>
+                        </div><!--//row-->
+                    </div>
+                    
+                    <div class="col-right col-6 col-md-4">
+                        <div class="media-item">
+                            <div class="media-item-inner">
+                                <img class="img-fluid" src="assets/images/media-4.jpg" alt="">
+                                <a class="mask d-none d-lg-block" href="assets/images/media-4-lg.jpg">
+                                    <span class="mask-inner">
+                                        <span class="item-title script">Ocean Seafood Platter</span>
+                                        <span class="desc d-none d-xl-block">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                        <span class="price d-none d-xl-block">Rs 100</span>
+                                    </span><!--//mask-inner-->
+                                </a><!--//mask-->
+                            </div><!--//media-item-inner-->
+                        </div><!--//media-item-->
+                        
+                        <div class="media-item">
+                            <div class="media-item-inner">
+                                <img class="img-fluid" src="assets/images/media-5.jpg" alt="">
+                                <a class="mask d-none d-lg-block" href="assets/images/media-5-lg.jpg">
+                                    <span class="mask-inner">
+                                        <span class="item-title script">Duo of Lamb</span>
+                                        <span class="desc d-none d-xl-block">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                        <span class="price d-none d-xl-block">Rs 100</span>
+                                    </span><!--//mask-inner-->
+                                </a><!--//mask-->
+                            </div><!--//media-item-inner-->
+                        </div><!--//media-item-->
+                    </div><!--//col-right-->
+
+                </div><!--//media-wrapper-->
+            </div><!--//featured-->
+        </div><!--//container-->
+    </div><!--//menus-section-->
+        
+    <!-- ******News section****** -->
+    <div id="news" class="news-section theme-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <span class="script">Latest</span>
+                <span class="title-text">News &amp; Events</span>
+                <span class="title-border"></span>
+            </h2>
+            <div class="row text-start">
+                <div class="news-wrapper col-md-8 col-12 ms-md-auto me-md-auto">
+                    <div class="item">
+                        <h4 class="title">Wine Tasting</h4>
+                        <div class="meta">Saturday, 17th August</div>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                        </p><!--//excerpt-->
+                        <a href="#" class="more-link" data-bs-toggle="modal" data-bs-target="#news-modal-1">Read more</a>
+                        <div class="date-badge">
+                            <span class="month">AUG</span>
+                            <span class="date">17</span>
+                        </div><!--/date-badge-->
+                    </div><!--//item-->
+                    <div class="item">
+                        <h4 class="title">Cooking Lesson</h4>
+                        <div class="meta">Saturday, 8th July</div>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                        </p><!--//excerpt-->
+                        <a href="#" class="more-link" data-bs-toggle="modal" data-bs-target="#news-modal-2">Read more</a>
+                        <div class="date-badge">
+                            <span class="month">JUL</span>
+                            <span class="date">08</span>
+                        </div><!--/date-badge-->
+                    </div><!--//item-->
+                    <div class="item">
+                        <h4 class="title">Exclusive Offers</h4>
+                       <style>.h4{font-family:text-center;}</style>
+                        <div class="meta">Tuesday, 1st June</div>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                        </p><!--//excerpt-->
+                        <a href="#" class="more-link" data-bs-toggle="modal" data-bs-target="#news-modal-3">Read more</a>
+                        <div class="date-badge">
+                            <span class="month">JUN</span>
+                            <span class="date">01</span>
+                        </div><!--/date-badge-->
+                    </div><!--//item-->
+                </div><!--//col-news-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </div><!--//news-section-->
+<!-- ******About section****** -->
+ 
+    <div id="about" class="about-section theme-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <span class="script">Our Story</span>
+                <span class="title-text">Behind The Scenes</span>
+            
+                <span class="title-border"></span>
+            </h2>
+            <div class="intro ms-auto me-auto">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+            </div>
+            <div class="suppliers">
+                <h3 class="title script">Our Suppliers</h3>
+                <div class="supplier-list ms-auto me-auto mb-4">
+                    <div class="supplier-type">
+                        <h4 class="type-title">Meat</h4>
+                        <ul class="list-unstyled">
+                            <li>Anderson Meat</li>
+                            <li>Sheppard John</li>
+                        </ul>
+                    </div><!--//supplier-type-->
+                    <div class="supplier-type">
+                        <h4 class="type-title">Fish</h4>
+                        <ul class="list-unstyled">
+                            <li>M&amp;T Seafood</li>
+                            <li>Collins Seafoods</li>
+                        </ul>
+                    </div><!--//supplier-type-->
+                    <div class="supplier-type">
+                        <h4 class="type-title">Fruit &amp; Veg</h4>
+                        <ul class="list-unstyled">
+                            <li>The Farm</li>
+                            <li>Fruitdrop Ltd</li>
+                        </ul>
+                    </div><!--//supplier-type-->
+                </div><!--//supplier-list-->
+            </div><!--//suppliers-->
+            <a class="btn btn-theme-primary text-center" href="assets/images/pdf-file.pdf" target="_blank">View full supplier list</a>
+        </div><!--//container-->
+    </div><!--//about-section-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<!-- ******Contact Section****** -->
+<section id="contact" class="contact-section theme-section">
+  <div class="container">
+    <h2 class="section-title text-center">
+      <span class="script">Contact Us</span>
+       <style> span.text{ font-family: 'Dancing Script', cursive;}</style>
+
+      <span class="title-text">Get in Touch</span>
+      <span class="title-border"></span>
+    </h2>
+    <div class="contact-content">
+      <div class="row gx-5">
+        <!-- Map -->
+        <div class="map-col col-12 col-lg-6">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?..."
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <!-- Info -->
+        <div class="info-col col-12 col-lg-6">
+          <div class="row">
+            <!-- General -->
+            <div class="col-12 col-lg-6">
+              <div class="general">
+                <h4 class="title">Come to find us</h4>
+                <div class="adr-group mb-4">
+                  <span class="street-address">68 King Street</span><br>
+                  <span class="city">London</span><br>
+                  <span class="postal-code">396191</span><br>
+                  <span class="country-name">India</span>
+                </div>
+                <h4 class="title">General Enquiries</h4>
+                <ul class="list-unstyled contact-methods mb-4">
+                  <li><i class="fas fa-envelope"></i> <a href="#">info@website.com</a></li>
+                  <li><i class="fas fa-phone"></i> <a href="tel:0800123456">0800 123 456</a></li>
+                </ul>
+                <h5 class="title">Want to book a table?</h5>
+                <button class="btn btn-theme-primary" data-bs-toggle="modal" data-bs-target="#reserve-modal">Book Now</button>
+              </div>
+            </div>
+            <!-- Press -->
+            <div class="col-12 col-lg-6">
+              <div class="press">
+                <h4 class="title">Press Enquiries</h4>
+                <p>Please contact us for any press related enquiries</p>
+                <p><i class="fas fa-envelope"></i> <a href="#">press@website.com</a></p>
+                <a class="btn btn-theme-secondary" href="#">Download Press Kit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+
+</style>
+<!-- Include Bootstrap Bundle with Popper (for modals, buttons, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Include Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+<!-- Replace 'your-fontawesome-kit.js' with your actual kit link or use the CDN below -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script> -->
+
+<!-- Optional: Smooth scroll for anchor links -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+<!-- ****** FOOTER ****** -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Opening Time -->
+        <div class="footer-col col-12 col-md-6 col-lg-3">
+          <div class="footer-col-inner">
+            <h3 class="title">Opening Time</h3>
+            <ul class="list-unstyled">
+              <li>Mon – Fri: 08:00 – 22:30</li>
+              <li>Sat: 09:00 – 23:00</li>
+              <li>Sun: 09:00 – 22:30</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Newsletter -->
+        <div class="footer-col col-12 col-md-6 col-lg-6">
+          <div class="footer-col-inner">
+            <h3 class="title">Newsletter</h3>
+            <p>Subscribe to our newsletter to get the latest offers and news.</p>
+            <form class="subscribe-form">
+              <div class="row g-2 g-md-0">
+                <div class="col-12 col-md-auto">
+                  <input type="email" class="form-control email-field" placeholder="Your Email" required>
+                </div>
+                <div class="col-12 col-md-auto">
+                  <button type="submit" class="btn btn-theme-primary">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Social -->
+        <div class="footer-col col-12 col-lg-3">
+          <div class="footer-col-inner">
+            <h3 class="title">Follow us</h3>
+            <ul class="social-icons list-inline">
+              <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar text-center">
+    <ul class="list-inline links mb-2">
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      <li class="list-inline-item">|</li>
+      <li class="list-inline-item"><a href="#">Terms &amp; Conditions</a></li>
+    </ul>
+    <small class="copyright">
+      Template Copyright © <a href="#">PRIYANKA</a>
+    </small>
+  </div>
+</footer>
+
+<!-- ****** Reserve Modal ****** -->
+<div id="reserve-modal" class="modal fade modal-reserve" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h2 class="modal-title text-center w-100">
+          <span class="script">Reservations</span><br>
+          <span class="title-text">Book a Table</span>
+          <span class="title-border"></span>
+        </h2>
+      </div>
+
+      <div class="modal-body">
+        <div class="intro text-center">
+          <p class="blurb mb-2">Call us now to book a table</p>
+          <p class="phone subtitle">0800 123 456</p>
+          <hr>
+          <p class="booking-intro mb-3">Or book online</p>
+        </div>
+
+        <form id="reserve-form" class="reserve-form">
+          <div id="form-messages" class="mb-3"></div>
+          <div class="row g-3 text-center">
+            <div class="col-6">
+              <i class="fas fa-calendar"></i>
+              <input type="text" class="form-control datepicker-input" placeholder="mm/dd/yyyy" required>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-clock"></i>
+              <select class="form-control" required>
+                <option selected>Select time</option>
+                <option>11:00</option><option>12:00</option>
+                <option>13:00</option><option>14:00</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-users"></i>
+              <select class="form-control" required>
+                <option selected>Select guests</option>
+                <option>1</option><option>2</option><option>3</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-user"></i>
+              <input type="text" class="form-control" placeholder="Your Name" minlength="2" required>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-envelope"></i>
+              <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-phone"></i>
+              <input type="tel" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-theme-primary w-100">Book Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div> 
+    <!-- News Modal 1-->
+    <div id="news-modal-1" class="news-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="newsModal1Label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="newsModal1Label"></h4>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                  <h4 class="exclusive-title">Wine Tasting</h4>
+<p class="exclusive-date">Friday, 14th July</p>
+
+                    <div class="post">
+                        <p><img class="img-fluid" src="assets/images/news-1.jpg" alt="" /></p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p>Maecenas ac turpis sit amet leo semper ultricies lobortis sed purus. Integer erat felis, maximus in placerat vel, fermentum a libero. Ut quis mollis est. Pellentesque semper nibh ut scelerisque tincidunt. Nullam commodo quam eu lectus ullamcorper, quis sagittis ligula sagittis. Fusce id pellentesque risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                    </div>
+                </div><!--//modal-body-->
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-theme-primary me-auto ms-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!--//modal-content-->
+        </div>
+    </div><!--//modal-->
+    
+    <!-- News Modal 2-->
+    <div id="news-modal-2" class="news-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="newsModal2Label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="newsModal2Label"></h4>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                 <h4 class="exclusive-title">Exclusive Offers</h4>
+<p class="exclusive-date">Tuesday, 1st June</p>
+
+                    <div class="post">
+                        <p><img class="img-fluid" src="assets/images/cooking lesson.jpg" alt="" /></p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p>Maecenas ac turpis sit amet leo semper ultricies lobortis sed purus. Integer erat felis, maximus in placerat vel, fermentum a libero. Ut quis mollis est. Pellentesque semper nibh ut scelerisque tincidunt. Nullam commodo quam eu lectus ullamcorper, quis sagittis ligula sagittis. Fusce id pellentesque risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                    </div>
+                </div><!--//modal-body-->
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-theme-primary ms-auto me-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!--//modal-content-->
+        </div>
+    </div><!--//modal-->
+    
+    <!-- News Modal 3-->
+    <div id="news-modal-3" class="news-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="newsModal3Label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="meta text-center" id="newsModal3Label"></h4>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                  <h2 class="event-title">Cooking Lesson</h2>
+<p class="event-date">Saturday, 8th July</p>
+
+                    <div class="post">
+                        <p><img class="img-fluid" src="assets/images/news-3.jpg" alt="" /></p>
+                        <p>Suspendisse et accumsan velit, non sollicitudin nisl. Donec dapibus augue eu viverra eleifend. Etiam finibus eu arcu nec tempus. Sed luctus metus leo, non pellentesque tortor tempor aliquam. Sed sit amet egestas est. Sed varius, urna ac bibendum porta, nunc risus suscipit turpis, sed condimentum neque metus non purus. Quisque volutpat nulla dignissim diam malesuada, id tincidunt orci scelerisque. Phasellus est orci, varius sit amet imperdiet ac, faucibus id urna. Mauris varius odio et nisl finibus, sed fringilla ligula eleifend.</p>
+                        <p>Curabitur volutpat bibendum mi sed hendrerit. Etiam commodo molestie facilisis. Nulla sed lectus eu metus consequat vehicula eu ac justo. Phasellus posuere vehicula rhoncus. Praesent a molestie tortor. Phasellus ornare imperdiet vehicula. Vivamus nec odio vitae ligula semper facilisis quis id odio.</p>
+                    </div>
+                </div><!--//modal-body-->
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-theme-primary ms-auto me-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!--//modal-content-->
+        </div>
+    </div><!--//modal-->
+    
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.min.js"></script>
+
+</head>
+<script>
+// Example: Form submission handling
+document.querySelector('.subscribe-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Thank you for subscribing!');
+  this.reset();
+});
+</script>
+<!-- Bootstrap JS (required for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optional: Custom JS to handle modal show events -->
+<script>
+  // Optional: Log modal event for each modal
+  const modals = ['#news-modal-1', '#news-modal-2', '#news-modal-3'];
+  modals.forEach(id => {
+    const modalEl = document.querySelector(id);
+    if (modalEl) {
+      modalEl.addEventListener('show.bs.modal', event => {
+        console.log(`Opening modal: ${id}`);
+      });
+    }
+  });
+</script>
+
+
+<!-- Place this before the closing </body> tag -->
+<script src="script.js"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-8YeZbTQzPjv54c5n6u1d58n65AFygY1b+jU1m3ZLJYROjQFT52AV5v2zrj2K6F7z" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-qJYzGghcBpTnKTRjDYa8MKr3mJ7Xj8o3fXJd9uDW4u3H7BWrH3pG5iOEKr3gCKk5" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gumshoe/5.1.1/gumshoe.polyfills.min.js"></script>
+<!-- SimpleLightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.js"></script>
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.jquery.min.js"></script>
+<script>
+  const lightbox = new SimpleLightbox('.lightbox a', {
+    captions: false,
+    animationSpeed: 300,
+    scaleImageToRatio: true,
+    disableRightClick: true
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.js"></script>
+<script>
+    const lightbox = new SimpleLightbox('.lightbox', {
+        captions: false,
+        animationSpeed: 300,
+        scaleImageToRatio: true
+    });
+</script>
+
+
+
+</body>
+</html>
